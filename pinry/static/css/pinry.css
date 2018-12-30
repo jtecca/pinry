@@ -2,11 +2,11 @@
 body {
     background: #F5F5EB;
     margin-top: 80px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: sans-serif;
     font-weight: 300;
 }
 
@@ -45,7 +45,7 @@ a {
 }
 
 .navbar-brand img {
-    font-family: 'Monoton', sans-serif;
+    font-family: sans-serif;
     height: 30px;
 }
 
