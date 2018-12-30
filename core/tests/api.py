@@ -3,7 +3,7 @@ import mock
 from django_images.models import Thumbnail
 from taggit.models import Tag
 from tastypie.exceptions import Unauthorized
-from tastypie.test import ResourceTestCase
+from tastypie.test import ResourceTestCaseMixin as ResourceTestCase
 
 from .helpers import ImageFactory, PinFactory, UserFactory
 from core.models import Pin, Image
@@ -254,7 +254,6 @@ class PinResourceTest(ResourceTestCase):
             u'id': pin.id,
             u'submitter': {
                 u'username': unicode(self.user.username),
-                u'gravatar': unicode(self.user.gravatar)
             },
             u'image': {
                 u'image': unicode(image.image.url),

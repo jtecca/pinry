@@ -107,11 +107,6 @@ class ImageAuthorization(DjangoAuthorization):
 
 
 class UserResource(ModelResource):
-    gravatar = fields.CharField(readonly=True)
-
-    def dehydrate_gravatar(self, bundle):
-        return bundle.obj.gravatar
-
     class Meta:
         list_allowed_methods = ['get']
         filtering = {
